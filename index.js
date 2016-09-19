@@ -7,7 +7,7 @@ const fs = require('fs');
 app.use(express.static('static'));
 
 app.get('/', function(req,res) {
-  res.sendFile('./index.html');
+  res.sendFile(`${__dirname}/index.html`);
 });
 
 app.post('/upload', function(req,res) {
